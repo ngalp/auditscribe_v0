@@ -6,7 +6,7 @@ import numpy as np
 st.title('Transport Claim Irregularities')
 
   
-DATA_URL = ('https://github.com/ngalp/auditscribe/blob/main/data/data.csv')
+DATA_URL = ('https://raw.githubusercontent.com/ngalp/auditscribe/refs/heads/main/data/data.csv')
 
 @st.cache_data
 def load_data(nrows):
