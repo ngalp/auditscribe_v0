@@ -11,8 +11,6 @@ DATA_URL = ('https://github.com/ngalp/auditscribe/blob/main/data/data.csv')
 @st.cache_data
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
-    lowercase = lambda x: str(x).lower()
-    data.rename(lowercase, axis='columns', inplace=True)
     return data
 
 data_load_state = st.text('Loading data...')
