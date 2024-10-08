@@ -9,12 +9,12 @@ st.title('Transport Claim Irregularities')
 DATA_URL = ('https://raw.githubusercontent.com/ngalp/auditscribe/refs/heads/main/data/data.csv')
 
 @st.cache_data
-def load_data(nrows):
-    data = pd.read_csv(DATA_URL, nrows=nrows)
+def load_data(url):
+    data = pd.read_csv(url)
     return data
 
 data_load_state = st.text('Loading data...')
-data = load_data(10000)
+data = load_data(DATA_URL)
 data_load_state.text("Done! (using st.cache_data)")
 
 if st.checkbox('Show raw data'):
