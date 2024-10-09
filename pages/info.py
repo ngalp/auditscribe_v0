@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-st.title('Transport Claim Irregularities')
+st.title('Data Analysis')
 
   
 DATA_URL = ('https://raw.githubusercontent.com/ngalp/auditscribe/refs/heads/main/data/data.csv')
